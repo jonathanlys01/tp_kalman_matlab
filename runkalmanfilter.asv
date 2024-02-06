@@ -36,8 +36,7 @@ H = [0.1685   -0.9595   -0.0755   -0.3771
      0.6664    -0.0835    0.6260    -0.6609];  
  
  
-C = randn(1,4);
-D = randn(1,2);
+D = [0.2 0;0 0.1];
 % process noise variance
 Q=diag([0.8^2 0.5^2]);
 % measurement noise variance
@@ -52,8 +51,6 @@ G1 = G + 0*randn(size(G));
 H1 = H + 0*randn(size(H));
 Q1 = Q;
 R1 = R;
-D1 = D + 0*randn(size(D));
-C1 = C + 1*randn(size(C));
 
 % However, zeros initial state
 %x1 = zeros(4,1); 
