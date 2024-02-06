@@ -39,7 +39,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "22.7"
+    ComputedModelVersion    "22.8"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -118,15 +118,37 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [1]
 	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1145.0, 632.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-252.15728813414796, -203.61445724936763]
-	  SceneRectInView	  [-252.15728813414796, -203.61445724936763, 1145.0, 632.0]
+	  ZoomFactor		  [1.7499999999999998]
+	  Offset		  [-78.810528273809439, -70.1190476190481]
+	  SceneRectInView	  [-78.810528273809439, -70.1190476190481, 654.28571428571433, 361.14285714285717]
 	}
 	Object {
 	  $ObjectID		  6
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2"
+	  Extents		  [1145.0, 632.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-209.8310976579578, -230.33350486841505]
+	  SceneRectInView	  [-209.8310976579578, -230.33350486841505, 1431.25, 790.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "36"
+	  Extents		  [1145.0, 632.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-146.58571428571426, -10.045238095238687]
+	  SceneRectInView	  [-146.58571428571426, -10.045238095238687, 763.33333333333337, 421.33333333333331]
+	}
+	Object {
+	  $ObjectID		  8
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -137,7 +159,7 @@ Model {
 	  SceneRectInView	  [-344.45725446428571, -131.35239290736988, 916.0, 505.6]
 	}
 	Object {
-	  $ObjectID		  7
+	  $ObjectID		  9
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -148,7 +170,7 @@ Model {
 	  SceneRectInView	  [-310.22630208333317, -234.81666666666678, 1145.0, 632.0]
 	}
 	Object {
-	  $ObjectID		  8
+	  $ObjectID		  10
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -159,18 +181,7 @@ Model {
 	  SceneRectInView	  [-515.4571428571428, -240.00476190476206, 1300.0, 649.6]
 	}
 	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "36"
-	  Extents		  [1145.0, 632.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-150.71904761904756, -111.93809523809585]
-	  SceneRectInView	  [-150.71904761904756, -111.93809523809585, 916.0, 505.6]
-	}
-	Object {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -179,17 +190,6 @@ Model {
 	  ZoomFactor		  [1.25]
 	  Offset		  [-55.214285714285779, -167.58571428571423]
 	  SceneRectInView	  [-55.214285714285779, -167.58571428571423, 916.0, 505.6]
-	}
-	Object {
-	  $ObjectID		  11
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1145.0, 632.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-104.98195684523796, -115.64285714285762]
-	  SceneRectInView	  [-104.98195684523796, -115.64285714285762, 763.33333333333337, 421.33333333333331]
 	}
 	Object {
 	  $ObjectID		  12
@@ -259,9 +259,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "j21lys"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Feb 05 10:24:10 2024"
-  RTWModifiedTimeStamp	  629027277
-  ModelVersionFormat	  "%<AutoIncrement:22.7>"
+  LastModifiedDate	  "Tue Feb 06 18:43:57 2024"
+  RTWModifiedTimeStamp	  629143162
+  ModelVersionFormat	  "%<AutoIncrement:22.8>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1398,7 +1398,7 @@ Model {
     Name		    "kalmanfilter"
     Location		    [62, 27, 1440, 900]
     SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1412,9 +1412,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "175"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "181"
+    SIDHighWatermark	    "190"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Inport
@@ -1436,7 +1436,7 @@ Model {
 	Name			"Kalman Filter"
 	Location		[62, 27, 1440, 900]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1450,7 +1450,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -1459,6 +1459,22 @@ Model {
 	  Position		  [5, 113, 35, 127]
 	  ZOrder		  -1
 	  PortDimensions	  "size(H,1)"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "187"
+	  Position		  [470, 60, 500, 90]
+	  ZOrder		  264
+	  Value			  "C1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "190"
+	  Position		  [720, 260, 750, 290]
+	  ZOrder		  267
+	  Value			  "D1"
 	}
 	Block {
 	  BlockType		  Delay
@@ -1503,10 +1519,6 @@ Model {
 	  ZOrder		  259
 	  Gain			  "H1"
 	  Multiplication	  "Matrix(K*u)"
-	  Port {
-	    PortNumber		    1
-	    Name		    "yn|n-1"
-	  }
 	}
 	Block {
 	  BlockType		  InitialCondition
@@ -1553,6 +1565,32 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [365, 100, 385, 120]
 	  ZOrder		  260
+	  Inputs		  "|++"
+	  Port {
+	    PortNumber		    1
+	    Name		    "xn|n"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "188"
+	  Ports			  [2, 1]
+	  Position		  [510, 130, 530, 150]
+	  ZOrder		  265
+	  Inputs		  "|++"
+	  Port {
+	    PortNumber		    1
+	    Name		    "xn|n"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  "189"
+	  Ports			  [2, 1]
+	  Position		  [765, 220, 785, 240]
+	  ZOrder		  266
 	  Inputs		  "|++"
 	  Port {
 	    PortNumber		    1
@@ -2131,7 +2169,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Estimated Y"
 	  SID			  "29"
-	  Position		  [765, 223, 795, 237]
+	  Position		  [830, 223, 860, 237]
 	  ZOrder		  -3
 	  Port			  "2"
 	}
@@ -2179,23 +2217,11 @@ Model {
 	  }
 	}
 	Line {
-	  Name			  "yn|n-1"
 	  ZOrder		  37
 	  SrcBlock		  "Gain1"
 	  SrcPort		  1
-	  Points		  [0, 0]
-	  Branch {
-	    ZOrder		    46
-	    Labels		    [2, 1]
-	    Points		    [0, 51; -600, 0]
-	    DstBlock		    "Sum"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    45
-	    DstBlock		    "Estimated Y"
-	    DstPort		    1
-	  }
+	  DstBlock		  "Sum3"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  38
@@ -2213,23 +2239,6 @@ Model {
 	  Points		  [28, 0; 0, 30]
 	  DstBlock		  "IC1"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  61
-	  SrcBlock		  "IC1"
-	  SrcPort		  1
-	  Points		  [9, 0]
-	  Branch {
-	    ZOrder		    63
-	    Points		    [0, 90]
-	    DstBlock		    "Delay"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    62
-	    DstBlock		    "Estimated X"
-	    DstPort		    1
-	  }
 	}
 	Line {
 	  ZOrder		  64
@@ -2287,6 +2296,67 @@ Model {
 	    DstPort		    1
 	  }
 	}
+	Line {
+	  ZOrder		  89
+	  SrcBlock		  "IC1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  90
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [49, 0; 0, 93; -34, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "xn|n"
+	  ZOrder		  91
+	  Labels		  [0, 0]
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    ZOrder		    93
+	    Points		    [0, 60; -89, 0; 0, 30]
+	    DstBlock		    "Delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    92
+	    DstBlock		    "Estimated X"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  96
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "xn|n"
+	  ZOrder		  97
+	  Labels		  [0, 0]
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [18, 0]
+	  Branch {
+	    ZOrder		    99
+	    Points		    [0, 100; -683, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    98
+	    DstBlock		    "Estimated Y"
+	    DstPort		    1
+	  }
+	}
       }
     }
     Block {
@@ -2315,7 +2385,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"150"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -2324,6 +2394,22 @@ Model {
 	  Position		  [-35, 183, -5, 197]
 	  ZOrder		  -1
 	  PortDimensions	  "size(G,2)"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "184"
+	  Position		  [150, 105, 180, 135]
+	  ZOrder		  6
+	  Value			  "C"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "186"
+	  Position		  [120, 335, 150, 365]
+	  ZOrder		  8
+	  Value			  "D"
 	}
 	Block {
 	  BlockType		  Gain
@@ -2339,7 +2425,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "G"
 	  SID			  "63"
-	  Position		  [85, 169, 190, 211]
+	  Position		  [25, 169, 130, 211]
 	  ZOrder		  -3
 	  Gain			  "G*chol(Q)'"
 	  Multiplication	  "Matrix(K*u)"
@@ -2400,6 +2486,24 @@ Model {
 	  ShowName		  off
 	}
 	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "182"
+	  Ports			  [2, 1]
+	  Position		  [190, 180, 210, 200]
+	  ZOrder		  4
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  "185"
+	  Ports			  [2, 1]
+	  Position		  [155, 290, 175, 310]
+	  ZOrder		  7
+	  ShowName		  off
+	}
+	Block {
 	  BlockType		  UnitDelay
 	  Name			  "Unit Delay"
 	  SID			  "48"
@@ -2418,7 +2522,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Y"
 	  SID			  "50"
-	  Position		  [470, 293, 500, 307]
+	  Position		  [485, 293, 515, 307]
 	  ZOrder		  -11
 	  Port			  "2"
 	}
@@ -2441,6 +2545,7 @@ Model {
 	  ZOrder		  3
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
+	  Points		  [210, 0]
 	  DstBlock		  "Y"
 	  DstPort		  1
 	}
@@ -2483,22 +2588,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  10
-	  SrcBlock		  "G"
-	  SrcPort		  1
-	  Points		  [65, 0]
-	  DstBlock		  "Sum"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  11
-	  SrcBlock		  "R"
-	  SrcPort		  1
-	  Points		  [83, 0; 0, 26; 97, 0]
-	  DstBlock		  "Sum1"
-	  DstPort		  2
-	}
-	Line {
 	  ZOrder		  34
 	  SrcBlock		  "U"
 	  SrcPort		  1
@@ -2511,6 +2600,54 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "X"
 	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  49
+	  SrcBlock		  "G"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 30; 40, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  50
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  51
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  52
+	  SrcBlock		  "R"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -36; 50, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  53
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [33, 0; 0, 28; 47, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  54
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
 	}
 	Annotation {
 	  SID			  "72"
